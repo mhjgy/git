@@ -74,4 +74,4 @@ management:
   server:
     servlet:
       context-path: /management      #必须加 /   ,不能和tomcat配置的端口一样,必须配置端口和端口一起使用的
-    port: 9001
+    port: 9002
