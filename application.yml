@@ -1,10 +1,10 @@
 server:
   port: 8001
   servlet:
-    context-path: /dep
+    context-path: /provide
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/springcloud_dep_8001
+    url: jdbc:mysql://localhost:3306/springcloud_dep_8002
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
