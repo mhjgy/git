@@ -10,26 +10,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: microservicecloud-dep     ##这个作为在eureka注册的名字
-  profiles: dev
  
-eureka:
-  client:
-    service-url:
-       defaultZone: http://eureka7001.com:7001/eureka/      ###这里必须添加/eureka/
-
-#集群配置 defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7003/eureka/,http://eureka7003.com:7003/eureka/
-#defaultZone:map集合的key必须这个
-
-  instance:
-    instance-id: microservicecloud-provide-dep-8001
-    prefer-ip-address: true
-    status-page-url-path: ${management.server.servlet.context-path}/actuator/info    
-
-# 当配置context-path时，需要配置才能访问，${management.server.servlet.context-path}端口会自动改变
-
-info:
-  app.name: 1
-  app.company: 2
 
  
 ---
