@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: microservicecloud-dep     ##这个作为在eureka注册的名字
-  profiles: test
+  profiles: dev
 eureka:
   client:
     service-url: 
@@ -31,7 +31,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: microservicecloud-dep     ##这个作为在eureka注册的名字
-  profiles: dev
+  profiles: test
 eureka:
   client:
     service-url:
