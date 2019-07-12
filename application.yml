@@ -11,6 +11,16 @@ spring:
   application:
     name: microservicecloud-dep     ##这个作为在eureka注册的名字
   profiles: dev
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest 
+  cloud:   
+    bus:
+      enabled: true
+      trace:
+        enabled: true   
 eureka:
   client:
     service-url:
@@ -35,7 +45,11 @@ management:
     servlet:
       context-path: /management      #必须加 /   ,不能和tomcat配置的端口一样,必须配置端口和端口一起使用的
     port: 9001
-
+  endpoint:
+    bus-refresh:
+      enabled: true      
+  
+ 
 ---
     
 server:
